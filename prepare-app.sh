@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd eknizka
-
 # Vytvorenie Docker siete pre aplikáciu
 docker network create my-app-network
 
@@ -12,27 +10,12 @@ docker volume create my-app-static-volume
 cat <<EOF > my-app-config.env
 APP_NAME=my-app
 APP_PORT=3000
-DB_HOST=localhost
+DB_HOST=mysql
 DB_PORT=3306
-DB_NAME=webovetechnologie
+DB_NAME=mydb
 DB_USER=mysql
-DB_PASSWORD=heslo
+DB_PASSWORD=password
 EOF
-
-# Spustenie Docker kontajnera pre MySQL server
-docker run -d \
- --name webovetechnologie \
- --network my-app-network \
- --volume webovetechnologie-volume:/var/lib/mysqld/ \
- -p 3306:3306 \
- -e MYSQL_ROOT_PASSWORD=MYSQL_ALLOW_EMPTY_PASSWORD \
- -e MYSQL_USER=mysql \
- -e MYSQL_PASSWORD=heslo \
- -e MYSQL_DATABASE=webovetechnologie \
-mysql:latest
-
-# Importovanie databázy z SQL súboru
-docker exec -i webovetechnologie mysql -u mysql -p webovetechnologie < C:/Users/miros/Desktop/zv1/eknizka/webovetechnologie.sql
 
 # Vytvorenie Docker obrazu pre aplikáciu
 docker build -t my-app .
