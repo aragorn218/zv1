@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: my-app-statefulset
+  namespace: my-app-namespace
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  serviceName: my-app-service
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app
+        image: my-app
+        ports:
+        - containerPort: 3000
+        volumeMounts:
+        - name: my-app-static-volume
+          mountPath: /app/static
+  volumeClaimTemplates:
+  - metadata:
+      name: my-app-static-pvc
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
