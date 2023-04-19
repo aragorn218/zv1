@@ -1,0 +1,795 @@
+*{
+  margin: 0;
+}
+.horna_lista{
+  padding: 0;
+  margin: 0;
+  padding-top: 0.3em;
+  background-color: rgb(217, 237, 255);
+  padding-bottom: 1em;
+}
+
+.telostranky{
+  background-color: rgb(111, 146, 199);
+  height: auto;
+}
+
+.footer{
+  background-color: bisque;
+  text-align: center;
+  min-height: 50px;
+}
+
+.hlavna {
+  font-size: 1.5em;
+  padding: 0.5rem 1rem; 
+}
+
+.logos{
+  text-align: center;
+}
+
+.Logo {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.aktivne{
+  color: lightsalmon;
+}
+
+.motto{
+  font-family: "Snell Roundhand", cursive;
+  font-size: 1.1em;
+  padding-top: 0;
+  margin: 0;
+}
+
+.tabulka{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.Nazov_tabulky{
+  font-size: 1.5em;
+  padding-top: 7em;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 85%;
+}
+
+.flex1{
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-top: 0.5em;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  position: relative;
+  padding: 115px 0 35px 0;
+  text-align: center;
+}
+
+.display-4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.obr{
+  padding-top: 0px;
+  padding: 8em 3em;
+  padding-right: 0;
+  max-height : 97%;
+  max-width: 77%;
+}
+
+@media screen and (min-width: 550px) and (max-width: 1249px){
+
+  html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+  }
+
+  .nav-flex{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .odkazy{
+      text-align: center;
+      padding-top: 2em;
+  }
+
+  .abc{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .Topobr {
+      padding-top: 0px;
+      padding: 8em 0em;
+      padding-right: 0;
+      min-height : 67%;
+      min-width: 37%;
+      margin-left: 35%;
+      margin-right: 50%;
+  }
+
+  .katalog{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+  }
+
+  .knihy{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .obrazok{
+      margin-bottom: 0;
+  }
+
+  .text{
+      text-align: center;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 579px){
+
+  .obr{
+      margin-left: 23%;
+      margin-right: 50%;
+      padding-bottom: 2em;
+  }
+
+}
+
+@media screen and (min-width: 580px) and (max-width: 629px){
+
+  .obr{
+      margin-left: 25%;
+      margin-right: 50%;
+      padding-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 630px) and (max-width: 680px){
+
+  .obr{
+      margin-left: 27%;
+      margin-right: 50%;
+      padding-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 680px) and (max-width: 799px){
+
+  .obr{
+      margin-left: 30%;
+      margin-right: 50%;
+      padding-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1249px){
+
+  .obr{
+      margin-left: 35%;
+      margin-right: 50%;
+      padding-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 1250px){
+
+  html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+  }
+
+  .nav-flex{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 100px;
+  }
+  
+  .nav-flex0{
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-top: 0.5em;
+  }
+
+  .odkazy{
+      text-align: left;
+      padding-top: 2em;
+  }
+
+  .abc{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 5em;
+  }
+  
+  .cba{
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+
+  .Topobr {
+      padding-top: 0px;
+      padding: 8em 3em;
+      padding-right: 0;
+      min-height : 67%;
+      min-width: 37%;
+  }
+
+  .katalog{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+  }
+
+  .stlpec{
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+  }
+
+  .obr{
+      margin-left: 25%;
+      margin-right: 50%;
+      padding-bottom: 2em;
+  }
+
+  .knihy{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .obrazok{
+      margin-bottom: 0;
+  }
+
+  .text{
+      text-align: center;
+  }
+
+}
+
+@media screen and (min-width: 1450px){
+  .telo{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+  }
+  
+  .obrkniha{
+      flex: 0 0 30%;
+      max-width: 30%;
+  }
+  
+  .obsahknihy{
+      flex: 0 0 58%;
+      max-width: 58%;
+  }
+  
+  .obrsam{
+      min-height: 87%;
+      min-width: 47%;
+      padding: 5em 4.5em;
+  }
+  
+  .urivokknihy{
+      text-align: left;
+      padding-top: 5em;
+      font-size: 140%;
+  }
+  
+  .mp3{
+      padding-top: 6em;
+      flex: 0 0 50%;
+      max-width: 50%;
+      font-size: 140%;
+      text-align: center;
+  }
+  
+  .play{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .buton{
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-top: 10em;
+  }
+  
+  .btt{
+      display: block;
+      width: 50%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+  }
+  
+  .button4 {
+      border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1449px){
+  .telo{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+  }
+  
+  .obrkniha{
+      flex: 0 0 35%;
+      max-width: 35%;
+  }
+  
+  .obsahknihy{
+      flex: 0 0 58%;
+      max-width: 58%;
+  }
+  
+  .obrsam{
+      min-height: 87%;
+      min-width: 47%;
+      padding: 5em 4.5em;
+  }
+  
+  .urivokknihy{
+      text-align: left;
+      padding-top: 5em;
+      font-size: 140%;
+  }
+  
+  .mp3{
+      padding-top: 6em;
+      flex: 0 0 50%;
+      max-width: 50%;
+      font-size: 140%;
+      text-align: center;
+  }
+  
+  .play{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .buton{
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-top: 10em;
+  }
+  
+  .btt{
+      display: block;
+      width: 50%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+  }
+  
+  .button4 {
+      border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px){
+  .telo{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+  }
+  
+  .obrkniha{
+      flex: 0 0 38%;
+      max-width: 38%;
+  }
+  
+  .obsahknihy{
+      flex: 0 0 62%;
+      max-width: 62%;
+  }
+  
+  .obrsam{
+      min-height: 87%;
+      min-width: 47%;
+      padding: 5em 4.5em;
+  }
+  
+  .urivokknihy{
+      text-align: left;
+      padding-top: 5em;
+      font-size: 140%;
+  }
+  
+  .mp3{
+      padding-top: 6em;
+      flex: 0 0 50%;
+      max-width: 50%;
+      font-size: 140%;
+      text-align: center;
+  }
+  
+  .play{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .buton{
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-top: 10em;
+  }
+  
+  .btt{
+      display: block;
+      width: 50%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+  }
+  
+  .button4 {
+      border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1099px){
+  .telo{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+  }
+  
+  .obrkniha{
+      padding-left: 30%;
+  }
+  
+  .obsahknihy{
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+  
+  .obrsam{
+      padding: 5em 4.5em;
+  }
+  
+  .urivokknihy{
+      text-align: center;
+      padding-top: 5em;
+      font-size: 140%;
+  }
+  
+  .mp3{
+      padding-top: 6em;
+      flex: 0 0 50%;
+      max-width: 50%;
+      font-size: 140%;
+      text-align: center;
+  }
+  
+  .play{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .buton{
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-top: 10em;
+  }
+  
+  .btt{
+      display: block;
+      width: 50%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+  }
+  
+  .button4 {
+      border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px){
+  .telo{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+  }
+  
+  .obrkniha{
+      padding-left: 25%;
+  }
+  
+  .obsahknihy{
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+  
+  .obrsam{
+      padding: 5em 4.5em;
+  }
+  
+  .urivokknihy{
+      text-align: center;
+      padding-top: 5em;
+      font-size: 140%;
+  }
+  
+  .mp3{
+      padding-top: 6em;
+      flex: 0 0 50%;
+      max-width: 50%;
+      font-size: 140%;
+      text-align: center;
+  }
+  
+  .play{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .buton{
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-top: 10em;
+  }
+  
+  .btt{
+      display: block;
+      width: 50%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+  }
+  
+  .button4 {
+      border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width: 799px){
+  .telo{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+  }
+  
+  .obrkniha{
+      padding-left: 25%;
+  }
+  
+  .obsahknihy{
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+  
+  .obrsam{
+      padding: 5em 4.5em;
+  }
+  
+  .urivokknihy{
+      text-align: center;
+      padding-top: 5em;
+      font-size: 140%;
+  }
+  
+  .mp3{
+      padding-top: 6em;
+      font-size: 140%;
+      text-align: center;
+  }
+  
+  .play{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .buton{
+      padding-top: 5em;
+      padding-left: 16em;
+  }
+  
+  .btt{
+      display: block;
+      width: 50%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+  }
+  
+  .button4 {
+      border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 729px){
+  .telo{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+  }
+  
+  .obrkniha{
+      padding-left: 25%;
+  }
+  
+  .obsahknihy{
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+  
+  .obrsam{
+      padding: 5em 4.5em;
+  }
+  
+  .urivokknihy{
+      text-align: center;
+      padding-top: 5em;
+      font-size: 140%;
+  }
+  
+  .mp3{
+      padding-top: 6em;
+      font-size: 140%;
+      text-align: center;
+  }
+  
+  .play{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .buton{
+      padding-top: 5em;
+      padding-left: 13.5em;
+  }
+  
+  .btt{
+      display: block;
+      width: 50%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+  }
+  
+  .button4 {
+      border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 649px){
+  .telo{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 100px;
+  }
+  
+  .obrkniha{
+      padding-left: 18%;
+  }
+  
+  .obsahknihy{
+      padding-left: 1em;
+      padding-right: 1em;
+  }
+  
+  .obrsam{
+      padding: 5em 4.5em;
+  }
+  
+  .urivokknihy{
+      text-align: center;
+      padding-top: 5em;
+      font-size: 140%;
+  }
+  
+  .mp3{
+      padding-top: 6em;
+      font-size: 140%;
+      text-align: center;
+  }
+  
+  .play{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .buton{
+      padding-top: 5em;
+      padding-left: 10em;
+  }
+  
+  .btt{
+      display: block;
+      width: 50%;
+      border: none;
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+  }
+  
+  .button4 {
+      border-radius: 12px;
+  }
+}
+
+.formtabulka{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.formtabulka input {
+    margin: 10px;
+}
+
+.formtabulka button {
+    margin: 10px;
+}

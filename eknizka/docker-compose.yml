@@ -1,0 +1,22 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      -"3000:3000"
+    depends_on:
+      - db
+  
+  db:
+    image: webovetechnologie
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD:
+      MYSQL_DATABASE: webovetechnologie
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: heslo
+    volumes:
+      - ./data:/var/lib/mysqld/
+
+    ports:
+      -"3306:3306"
